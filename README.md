@@ -48,9 +48,7 @@ The Online Job Portal ensures efficient job management for employers and job see
    - View and update profile information
    - View applied jobs and status
    - Cancel applied jobs
-## DB_SCHEMA
-  ![DB_SCHEMA](https://raw.githubusercontent.com/SaiD-MH/Online-Job-Portal/main/src/main/resources/database/DATABASE%20SCHEMA.png)
-
+   - 
 ## API's Endpoints
   ### REST APIs for Auth
   ![REST APIs for Auth](https://raw.githubusercontent.com/SaiD-MH/Online-Job-Portal/main/src/main/resources/static/REST%20APIs%20for%20Auth.PNG)
@@ -82,41 +80,8 @@ The Online Job Portal ensures efficient job management for employers and job see
       - GET `/api/employees` List All Employees
       - GET `/api/employees/{employeeId}` Get Employee By Id
       - GET `/api/employees/{employeeId}/jobs/yourApplications` Get Details  of application submitted by employee  
-  
-  ### REST APIs for Job Categories
-  ![REST APIs for Job Categories](https://raw.githubusercontent.com/SaiD-MH/Online-Job-Portal/main/src/main/resources/static/REST%20APIs%20for%20Job%20Categories.PNG)
-  
-       - POST   `/api/jobCategories`      Create New Job Category
-       - GET    `/api/jobCategories`      List All Job Categories
-       - PUT    `/api/jobCategories/{id}` Update Existing Job Category
-       - DELETE `/api/jobCategories/{id}` Delete Existing Job Category
 
-   ### REST APIs for Job
-  ![REST APIs for Job ](https://raw.githubusercontent.com/SaiD-MH/Online-Job-Portal/main/src/main/resources/static/REST%20APIs%20for%20Job.PNG)
-  
-      - Get `/api/jobs`         List All Jobs
-      - Get `/api/jobs/{jobId}` Get Job By Id
-      - Get `/api/jobs/search`  Search about Job by jobCategory & Location & Type (Part , Full) time
-
-   ### REST APIs for Job Application
-![REST APIs for Job Application ](https://raw.githubusercontent.com/SaiD-MH/Online-Job-Portal/main/src/main/resources/static/REST%20APIs%20for%20Job%20Application.PNG)
-  
-      - GET `/api/jobs/jobApplications` List All Applications
-      
-      
-## Setup Instructions
-
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/SaiD-MH/Online-Job-Portal.git
-
-2. Open the backend project in your preferred IDE (e.g., Spring Tool Suite, IntelliJ IDEA)
-
-3. Configure database settings:
-    - Open src/main/resources/application.properties.
-    - Update the database URL, username, password, and other configurations as per your local setup.
-
-4. Run the application:
+Run the application:
     - Build and run the Spring Boot application.
     - The application will be deployed locally at http://localhost:8080.
   
