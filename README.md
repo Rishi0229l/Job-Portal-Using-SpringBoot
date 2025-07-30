@@ -48,39 +48,17 @@ The Online Job Portal ensures efficient job management for employers and job see
    - View and update profile information
    - View applied jobs and status
    - Cancel applied jobs
-   - 
-## API's Endpoints
-  ### REST APIs for Auth
-  ![REST APIs for Auth](https://raw.githubusercontent.com/SaiD-MH/Online-Job-Portal/main/src/main/resources/static/REST%20APIs%20for%20Auth.PNG)
   
-       - POST `/api/auth/login`   - Login and obtain JWT authentication token.
-       - POST `/api/auth/signin`  - Register a new user (Employer or Employee).
+   - POST `/api/auth/login`   - Login and obtain JWT authentication token.
+   - POST `/api/auth/signin`  - Register a new user (Employer or Employee).
+   - POST `/api/employers` Create new Employer
+   - POST `/api/employers/{employerId}/jobs` Create new Job
+   - POST `/api/employers/{employerId}/myApplications/{applicationId}` Update Application Status
+   - GET `/api/employers` List All Employers
+   - GET `/api/employers/{employerId}/jobs` Get All Jobs Posted By Give employer ID
+   - GET `/api/employers/{employerId}/myApplications` Get All Applications for Jobs Posted by Employer Id
+   - DELETE `/api/employers/{employerId}/jobs/{jobId}` Delete Job by Posted By Employer
   
-  ### REST APIs for Employer
-  ![REST APIs for Employer](https://raw.githubusercontent.com/SaiD-MH/Online-Job-Portal/main/src/main/resources/static/REST%20APIs%20for%20Employer.png)  
-      
-      - POST `/api/employers` Create new Employer
-      - POST `/api/employers/{employerId}/jobs` Create new Job
-      - POST `/api/employers/{employerId}/myApplications/{applicationId}` Update Application Status
-      - GET `/api/employers` List All Employers
-      - GET `/api/employers/{employerId}/jobs` Get All Jobs Posted By Give employer ID
-      - GET `/api/employers/{employerId}/myApplications` Get All Applications for Jobs Posted by Employer Id
-      - DELETE `/api/employers/{employerId}/jobs/{jobId}` Delete Job by Posted By Employer
-    
-  ### REST APIs for Employee
-    
-  ![REST APIs for Employee](https://raw.githubusercontent.com/SaiD-MH/Online-Job-Portal/main/src/main/resources/static/REST%20APIs%20for%20Employer.png)
-        
-      - POST `/api/employees` Create new Employee
-      - POST `/api/employees/{employeeId}/profileDetails` Edit Employee Pofile Details
-      - POST `/api/employees/{employeeId}/skills` Edit Employee Skills
-      - POST `/api/employees/{employeeId}/qualifications` Edit Employee Qualifications
-      - POST `/api/employees/{employeeId}/workExperiences` Edit Employee Work Experience
-      - POST `/api/employees/{employeeId}/jobs/{jobId}/apply` Employee Apply for job
-      - GET `/api/employees` List All Employees
-      - GET `/api/employees/{employeeId}` Get Employee By Id
-      - GET `/api/employees/{employeeId}/jobs/yourApplications` Get Details  of application submitted by employee  
-
 Run the application:
     - Build and run the Spring Boot application.
     - The application will be deployed locally at http://localhost:8080.
